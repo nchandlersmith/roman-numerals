@@ -2,7 +2,15 @@ package roman
 
 func ToRoman(number int) string {
 	numeral := ""
-	for number >= 40 {
+	if number >= 90 {
+		numeral += "XC"
+		number -= 90
+	}
+	for number >= 50 {
+		numeral += "L"
+		number -= 50
+	}
+	if number >= 40 {
 		numeral += "XL"
 		number -= 40
 	}

@@ -117,3 +117,31 @@ func Test_49ReturnsXLIX(t *testing.T) {
 		t.Errorf("Expected: %v Found %v", expected, result)
 	}
 }
+func Test_50ReturnsL(t *testing.T) {
+	result := roman.ToRoman(50)
+	expected := "L"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
+func Test_87ReturnsLXXXVII(t *testing.T) {
+	result := roman.ToRoman(87)
+	expected := "LXXXVII"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
+func Test_98ReturnsXCVIII(t *testing.T) {
+	result := roman.ToRoman(98)
+	expected := "XCVIII"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
+func Test_99ReturnsXCIX(t *testing.T) {
+	result := roman.ToRoman(99)
+	expected := "XCIX"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
