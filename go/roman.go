@@ -1,11 +1,9 @@
 package roman
 
 func ToRoman(number int) string {
-	if number == 2 {
-		return "II"
+	numeral := ""
+	for i := 1; i <= number; i++ {
+		numeral += "I"
 	}
-	if number == 3 {
-		return "III"
-	}
-	return "I"
+	return numeral
 }
