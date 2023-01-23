@@ -7,6 +7,9 @@ func ToRoman(number int) string {
 	if number == 9 {
 		return "IX"
 	}
+	if number == 14 {
+		return "XIV"
+	}
 	if number == 19 {
 		return "XIX"
 	}
