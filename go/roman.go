@@ -12,5 +12,8 @@ func ToRoman(number int) string {
 	if numeral == "IIII" {
 		return "IV"
 	}
+	if numeral == "VIIII" {
+		return "IX"
+	}
 	return numeral
 }
