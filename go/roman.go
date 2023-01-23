@@ -5,5 +5,8 @@ func ToRoman(number int) string {
 	for i := 1; i <= number; i++ {
 		numeral += "I"
 	}
+	if numeral == "IIII" {
+		return "IV"
+	}
 	return numeral
 }
