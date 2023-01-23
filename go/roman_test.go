@@ -33,3 +33,10 @@ func Test_4ReturnsIV(t *testing.T) {
 		t.Errorf("Expected: %v Found %v", expected, result)
 	}
 }
+func Test_5ReturnsV(t *testing.T) {
+	result := roman.ToRoman(5)
+	expected := "V"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
