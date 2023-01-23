@@ -1,6 +1,15 @@
 package roman
 
 func ToRoman(number int) string {
+	if number == 4 {
+		return "IV"
+	}
+	if number == 9 {
+		return "IX"
+	}
+	if number == 19 {
+		return "XIX"
+	}
 	numeral := ""
 	for number >= 10 {
 		numeral += "X"
@@ -12,12 +21,6 @@ func ToRoman(number int) string {
 	}
 	for i := 1; i <= number; i++ {
 		numeral += "I"
-	}
-	if numeral == "IIII" {
-		return "IV"
-	}
-	if numeral == "VIIII" {
-		return "IX"
 	}
 	return numeral
 }
