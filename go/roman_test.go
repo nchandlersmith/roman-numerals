@@ -12,3 +12,10 @@ func Test_1ReturnsI(t *testing.T) {
 		t.Errorf("Expected: %v Found %v", expected, result)
 	}
 }
+func Test_2ReturnsII(t *testing.T) {
+	result := roman.ToRoman(2)
+	expected := "II"
+	if result != expected {
+		t.Errorf("Expected: %v Found %v", expected, result)
+	}
+}
