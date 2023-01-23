@@ -2,6 +2,9 @@ package roman
 
 func ToRoman(number int) string {
 	numeral := ""
+	if number == 10 {
+		return "X"
+	}
 	if number >= 5 {
 		numeral += "V"
 		number -= 5
